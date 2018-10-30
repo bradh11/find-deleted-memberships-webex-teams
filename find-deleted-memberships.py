@@ -1,4 +1,4 @@
-from ciscosparkapi import CiscoSparkAPI
+from webexteamssdk import WebexTeamsAPI
 import json
 import requests
 
@@ -11,7 +11,7 @@ for line in csvfile:
 
 # user token must have compliance officer role 
 token ='< insert admin token here >'
-api = CiscoSparkAPI(access_token=token)
+api = WebexTeamsAPI(access_token=token)
 
 # change dates below to the time where users were deleted
 eventParams = {
